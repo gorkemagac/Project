@@ -22,4 +22,12 @@ public class LoginPage {
     @FindBy(id="submit-form")
     public WebElement loginbutton;
 
+
+    public void login()
+    {
+        this.username.sendKeys("Employee31");
+        this.password.sendKeys("Employee123");
+         this.loginbutton.click();
+    }
+
 }
